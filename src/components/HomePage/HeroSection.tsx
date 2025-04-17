@@ -36,7 +36,7 @@ export default function HeroSection() {
           alt: "Hero Banner 2",
           title: "celebrate your special occasions with us...",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         },
         {
           src: "subHero.jpg",
@@ -59,8 +59,7 @@ export default function HeroSection() {
           src: "mainHero.jpg",
           alt: "Hero Banner 3",
           title: "make every moment unforgettable...",
-          description:
-            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+          description: "Ut enim ad minim veniam, quis nostrud.",
         },
         {
           src: "subHero.jpg",
@@ -136,15 +135,15 @@ export default function HeroSection() {
                 <img
                   src={slide.item[0].src}
                   alt={slide.item[0].alt}
-                  className="rounded-l-4xl object-cover w-full  md:h-full bg-top relative"
+                  className="md:rounded-l-4xl object-cover w-full  md:h-full bg-top relative"
                 />
                 {slide.item[0].title && slide.item[0].description && (
                   <>
-                    <div className="absolute bottom-3 left-7 text-white z-20 md:max-w-1/2 text-center">
-                      <h1 className="text-white font-bold text-lg md:text-2xl uppercase">
+                    <div className="absolute bottom-3 left-0 md:left-7 text-white z-20 w-full md:max-w-1/2 text-center overflow-ellipsis">
+                      <h1 className="text-white font-bold text-sm sm:text-lg md:text-2xl uppercase">
                         {slide.item[0].title}
                       </h1>
-                      <p className="text-md font-light">
+                      <p className=" text-sm md:text-md font-light overflow-ellipsis break-words">
                         {slide.item[0].description}
                       </p>
                     </div>
